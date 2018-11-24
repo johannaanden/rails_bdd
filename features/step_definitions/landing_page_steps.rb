@@ -7,6 +7,7 @@ Then("I should see {string}") do |content|
 end
 
 Given("the following articles exists") do |table|
-    # table is a Cucumber::MultilineArgument::DataTable
-    pending # Write code here that turns the phrase above into concrete actions
+    table.hashes.each do |article|
+        Article.create!(article)
+    end
 end
