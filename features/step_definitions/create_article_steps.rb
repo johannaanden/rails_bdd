@@ -10,8 +10,8 @@ When("I click {string}") do |value|
     click_on value
 end
   
-When("I fill in {string} with {string}") do |string, string2|
-    pending # Write code here that turns the phrase above into concrete actions
+When("I fill in {string} with {string}") do |field, value|
+    fill_in field, with: value
 end
   
 When("I click {string} button") do |string|
