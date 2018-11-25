@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resources :artices
+  resources :articles
   root controller: :articles, action: :index
 end
