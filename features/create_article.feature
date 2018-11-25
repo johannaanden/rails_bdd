@@ -6,6 +6,7 @@ Feature: Create articles
 
   Background:
     Given I visit the "landing" page
+    And show me the page
     When I click "New Article" link
 
   Scenario: Successfully create an article [Happy Path]
