@@ -6,7 +6,7 @@ Given("show me the page") do
     save_and_open_page
   end
   
-When("I click {string} link") do |value|
+When("I click {string}") do |value|
     click_on value
 end
   
