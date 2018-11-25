@@ -20,5 +20,5 @@ Feature: Create articles
 
   Scenario: Publisher doesn't enter a title for the article [Sad Path]
     When I fill in "Content" with "Excited about learning a new framework"
-    And I click "Create Article" button
+    And I click "Create Article"
     Then I should see "Title can't be blank"
