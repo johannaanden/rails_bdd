@@ -1,10 +1,6 @@
 Given("I visit the {string} page") do |string|
     visit root_path
 end
-
-Then("Show me the page") do
-    save_and_open_page
-  end
   
 When("I click {string}") do |value|
     click_on value
