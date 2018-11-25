@@ -15,5 +15,5 @@ When("I fill in {string} with {string}") do |field, value|
 end
   
 Then("I should be on {string} page") do |page|
-    visit(`/articles/${page[:id]}`)
+    expect(page).to have_current_path(article_path("#{Article.last.id}"))
 end
