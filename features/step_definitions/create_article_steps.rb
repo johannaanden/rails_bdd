@@ -14,6 +14,6 @@ When("I fill in {string} with {string}") do |field, value|
     fill_in field, with: value
 end
   
-Then("I should be on {string} page") do |page|
+Then("I should be on {string} page") do |string|
     expect(page).to have_current_path(article_path("#{Article.last.id}"))
 end
