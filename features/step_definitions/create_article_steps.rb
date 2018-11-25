@@ -2,7 +2,7 @@ Given("I visit the {string} page") do |string|
     visit root_path
 end
 
-Given("show me the page") do
+Then("Show me the page") do
     save_and_open_page
   end
   
