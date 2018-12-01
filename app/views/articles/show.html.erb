@@ -9,3 +9,18 @@
   <strong>Content:</strong>
   <%= @article.content %>
 </p>
+
+<h2>Add a comment:</h2>
+<%= form_with(model: [ @article, @article.comments.build ], local: true) do |form| %>
+  <p>
+    <%= form.label :email %><br>
+    <%= form.text_field :email %>
+  </p>
+  <p>
+    <%= form.label :message %><br>
+    <%= form.text_area :message %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
