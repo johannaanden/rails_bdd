@@ -13,13 +13,13 @@
 <h2>Comments</h2>
 <% @article.comments.each do |comment| %>
   <p>
-    <strong>Commenter:</strong>
-    <%= comment.commenter %>
+    <strong>Email:</strong>
+    <%= comment.email %>
   </p>
  
   <p>
     <strong>Comment:</strong>
-    <%= comment.body %>
+    <%= comment.message %>
   </p>
 <% end %>
 
